@@ -3,8 +3,8 @@
 delimiter $$
 create procedure swap_de_nombres() 
 BEGIN
-	  insert into b (id, nombre1, nombre2)
-	    select id, nombre2, nombre1 from a;
+	  insert into b (id, nombre1, nombre2, id_original)
+	    select id, nombre2, nombre1, id from a;
 
 END;
 $$
