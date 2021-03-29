@@ -15,4 +15,5 @@ alter table b
   add constraint fk_id 
   foreign key (id_original) references a (id);
 
+Agrego codigo que no funciona
 
